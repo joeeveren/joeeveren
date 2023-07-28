@@ -167,7 +167,7 @@ public class Main {
         System.out.println ("4.2");
         Random rand = new Random();
         Resource [] res = new Resource[500];
-        for(int i = 0; i < 501; i ++) {
+        for(int i = 0; i < 500; i ++) {
             System.out.println ();
             System.out.println ("Итерация номер " + i + ":");
             int n = rand.nextInt(3);
