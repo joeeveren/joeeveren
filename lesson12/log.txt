@@ -1,0 +1,2 @@
+Exception in thread "main" java.lang.AssertionError
+	at Loggi.main(Loggi.java:15)

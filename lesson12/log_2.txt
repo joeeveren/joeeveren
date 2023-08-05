@@ -1,0 +1,2 @@
+java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 4
+	at Loggi.main(Loggi.java:15)
