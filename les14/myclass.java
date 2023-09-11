@@ -47,7 +47,7 @@ public class myclass {
                     sum += number;
                     linesRead++;
                 } catch (NumberFormatException e) {
-                    result[0] = 1; // Код ошибки 3: Файл содержит неправильные данные
+                    result[0] = 3; // Код ошибки 3: Файл содержит неправильные данные
                     result[1] = 0; // Сумма равна 0, так как файл содержит ошибку
                     br.close();
                     return result;
