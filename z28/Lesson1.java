@@ -5,7 +5,6 @@ public class Level1
     public static int squirrel(int N)
     {
         double g = 1 ;
-        System.out.println(N);
         while (N > 0) {
             g = g * N ;
             N = N - 1;
