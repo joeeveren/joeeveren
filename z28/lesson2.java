@@ -1,5 +1,5 @@
 import java.util.*;
-public class MyClass {
+public class lesson2 {
 public static int odometer(int[] oksana) {
     int w = 0;
     for (int i = 0; i < oksana.length; i += 2) {
