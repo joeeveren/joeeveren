@@ -15,7 +15,6 @@ public class Level1 {
             for (int i = 0; i < row.length; i += 2) {
                 if (t == row[i].charAt(0)) {
                     sume = sume + Integer.parseInt(row[i + 1]);
-                    System.out.println(row[i+1]);
                     found = true; 
                     break;  
                 }
