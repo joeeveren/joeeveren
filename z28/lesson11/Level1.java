@@ -44,6 +44,9 @@ public class Level1 {
             f = false;
             fine = fine + o;
         }
+        if (fine.length() == 0) {
+            return "0";
+        }
         return fine;
     } 
 }
