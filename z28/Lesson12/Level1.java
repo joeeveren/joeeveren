@@ -29,7 +29,7 @@ public class Level1 {
         if (max1 == max2) {
             return  "no winner" ;
         }
-        if (1.0 *max1 / sum * 100 >= 50 ) {
+        if (1.0 *max1 / sum * 100 > 50 ) {
             return "majority winner " + (id + 1);
         }
         return "minority winner " + (id + 1);
