@@ -11,9 +11,10 @@ public class Level1 {
             f = track[i][0];
             k = track[i][0]  - k;
             int t = (s + k ) % (track[i][1] + track[i][2]); 
-            int l = (t < track[i][1]) ? track[i][1] : k;
-            s = s + l ;
+            int l = (t < track[i][1]) ? track[i][1] - t + k : k;
+            s = s + l;
         }
         return s + L - track[track.length -1][0] ;
-        }
+    }
+
 }
