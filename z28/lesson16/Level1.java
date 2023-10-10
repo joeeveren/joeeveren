@@ -17,7 +17,7 @@ public class Level1 {
         int [] p = sorted(price);
         int sum = 0;
         for (int i = 0; i < N; i ++) {
-            if (i % 3 != 2) {
+            if (i % 3 == 2) {
                 sum = sum + p[i];
             }
         }
