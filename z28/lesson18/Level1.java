@@ -9,7 +9,7 @@ public class Level1 {
             int b = data[i + 1];
             int c = data[i + 2];
 
-            if (a < b && b < c) {
+            if (a < с && b < c) {
                 i++;
             } else  {
                 int temp = a;
