@@ -1,6 +1,7 @@
 import java.util.*;
-
 public class Level1 {
+
+
 
     public static String[] ShopOLAP(int N, String[] items) {
         String[] name = new String[N];
@@ -33,6 +34,7 @@ public class Level1 {
         for (int i = 0; i < finals.size(); i++) {
             resultArray[i] = finals.get(i);
         }
+        sortResults(resultArray);
         return resultArray;
     }
 
@@ -44,4 +46,32 @@ public class Level1 {
         }
         return false;
     }
+    
+    
+    public static void sortResults(String[] results) {
+    for (int i = 0; i < results.length - 1; i++) {
+        for (int j = 0; j < results.length - i - 1; j++) {
+            String[] parts1 = results[j].split("\\s+");
+            String[] parts2 = results[j + 1].split("\\s+");
+            int sales1 = Integer.parseInt(parts1[1]);
+            int sales2 = Integer.parseInt(parts2[1]);
+
+            if (sales1 < sales2) {
+                String temp = results[j];
+                results[j] = results[j + 1];
+                results[j + 1] = temp;
+            } else if (sales1 == sales2) {
+                if (parts1[0].compareTo(parts2[0]) > 0) {
+                    String temp = results[j];
+                    results[j] = results[j + 1];
+                    results[j + 1] = temp;
+                }
+            }
+        }
+    }
+}
+
+    
+    
+    
 }
